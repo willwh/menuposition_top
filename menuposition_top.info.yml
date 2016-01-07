@@ -1,0 +1,5 @@
+name: MenuPosition Top
+type: module
+description: A stopgap for the menu_position 8.x port
+core: 8.x
+package: Other

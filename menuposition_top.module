@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Contains menuposition_top.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function menuposition_top_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the menuposition_top module.
+    case 'help.page.menuposition_top':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A stopgap for the menu_position 8.x port') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function menuposition_top_theme() {
+  $theme = [];
+
+  return $theme;
+}
